@@ -22,6 +22,25 @@ code .
 - Simple React Snippets
 - Material Icon Theme
 
+# Google Fonts
+
+## Agregar una fuente de Google Fonts a React
+
+Agregar una fuente de Google Fonts a React es muy fácil:
+
+1. buscamos la fuente en Google Fonts
+2. + select this style
+3. se agregará a tus fuentes seleccionadas, y ahí copiamos solo el link que está dentro de href
+4. en index.js importamos la fuente de la siguiente forma
+```css
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+```
+5. Listo podemos utilizarla, por ejemplo:
+```css
+body {
+  font-family: 'Piedra', cursive;
+}
+```
 
 
 
