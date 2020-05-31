@@ -1,3 +1,21 @@
+# Visual Studio Code
+
+## Abrir un proyecto
+
+Existen varias formas de abrir un proyecto:
+
+1. Abren la carpeta del proyecto y en la raíz dan click derecho, Abrir con Code.
+2. Arrastran la carpeta del proyecto a Visual Studio Code.
+3. Desde la terminal entramos al proyecto:
+
+```
+cd my-app
+
+code .
+```
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
