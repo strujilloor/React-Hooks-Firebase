@@ -14,6 +14,17 @@ cd my-app
 code .
 ```
 
+## Extensiones VSC
+- ES7 React/Redux/GraphQL/React-Native snippets
+- Firebase Snippets
+- generate-react-component
+- Reactjs code snippets ( No me gustó )
+- Simple React Snippets
+- Material Icon Theme
+
+
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
