@@ -17,6 +17,10 @@ const Formulario = () => {
             return;
         }
         console.log(`Procesando datos... ${fruta} ${descripcion}`);
+
+        e.target.reset();
+        setFruta('');
+        setDescripcion('');
     }
 
     return (
