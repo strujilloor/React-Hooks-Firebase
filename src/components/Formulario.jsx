@@ -5,11 +5,25 @@ const Formulario = () => {
     const [fruta, setFruta] = useState('');
     const [descripcion, setDescripcion] = useState('');
 
+    const guardarDatos = (e) => {
+        e.preventDefault();
+        // comprueba si el campo está vacío
+        if ( !fruta.trim() ) {
+            console.log('campo fruta vacío');
+            return;
+        }
+        if ( !descripcion.trim() ) {
+            console.log('campo descripcion vacío');
+            return;
+        }
+        console.log(`Procesando datos... ${fruta} ${descripcion}`);
+    }
+
     return (
         <div className="card">
             <div className="card-body">
                 <h2>Formulario</h2>
-                <form>
+                <form onSubmit={ guardarDatos }>
                     <div className="form-group">
                         <label htmlFor="">Fruta</label>
                         <input
