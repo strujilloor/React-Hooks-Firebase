@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Formulario = () => {
+
+    const [fruta, setFruta] = useState('');
+    const [descripcion, setDescripcion] = useState('');
+
     return (
         <div className="card">
             <div className="card-body">
@@ -11,14 +15,16 @@ const Formulario = () => {
                         <input
                             className="form-control"
                             type="text"
-                            placeholder="Ingrese Fruta"/>
+                            placeholder="Ingrese Fruta"
+                            onChange={ ( e ) => setFruta( e.target.value ) }/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="">Descripción</label>
                         <input
                             className="form-control"
                             type="text"
-                            placeholder="Ingrese Descripción"/>
+                            placeholder="Ingrese Descripción"
+                            onChange={ ( e ) => setDescripcion( e.target.value ) }/>
                     </div>
                     <button 
                         className="btn btn-primary btn-block"
