@@ -10,6 +10,14 @@ const Listas = () => {
 
     const [ lista, setLista ] = useState( estadoInicial );
 
+    const agregarElemento = () => {
+        console.log('click');
+        setLista([
+            ...lista,
+            {id: 4, texto: 'Tarea 4'}
+        ]);
+    }
+
     return (
         <div>
             <h2>Listas</h2>
@@ -20,6 +28,9 @@ const Listas = () => {
                     >{ item.texto }</h4>
                 ))
             }
+            <button
+                onClick={ agregarElemento }
+            >Agregar</button>
         </div>
     );
 };
